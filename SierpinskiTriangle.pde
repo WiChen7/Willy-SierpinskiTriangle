@@ -11,7 +11,7 @@ public void draw()
 public void sierpinski(int x, int y, int len) 
 {
   if (len <= 20) {
-    stroke(random(3000), 0, random(255));
+    stroke(0, random(255), 0);
     triangle(x, y, x + len, y, x + len/2, y - len);
   } else {
     sierpinski(x, y, len/2);
